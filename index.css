@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Sans+TC:wght@100..900&family=Stylish&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 25px 30px;
+}
+
+.header .logo img{
+    width: 220px;
+    height: 50px;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header ul li {
+    padding-left: 30px;
+    font-size: 20px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: bold;
+}
+
+.container .items {
+    aspect-ratio: 6 / 5;
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: repeat(2, 25%);
+    justify-content: center;
+}
+
+.container .item {
+    background: red;
+    border: 3px solid green;
+}
+
+.container .item1 {
+    background-image: url("./img/bre1.jpg");
+    position: relative;
+    
+}
+
+.container .item1 .item1_slid {
+    width: 100%;
+    aspect-ratio: 6 / 5;
+    background-image: url("./img/logo.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: test 4s step-start infinite normal; 
+}
+
+.container .item2 {
+    background-image: url("./img/bre1.jpg");
+    position: relative;
+    
+}
+
+.container .item2 .item2_slid{
+    width: 100%;
+    aspect-ratio: 6 / 5;
+    background-image: url("./img/logo.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: test 4s step-start infinite normal; 
+}
+
+.container .item3 {
+    background-image: url("./img/bre1.jpg");
+    position: relative;
+    
+}
+
+.container .item3 .item3_slid {
+    width: 100%;
+    aspect-ratio: 6 / 5;
+    background-image: url("./img/logo.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: test 4s step-start infinite normal; 
+}
+
+.container .item4 {
+    background-image: url("./img/bre1.jpg");
+    position: relative;
+    
+}
+
+.container .item4 .item4_slid {
+    width: 100%;
+    aspect-ratio: 6 / 5;
+    background-image: url("./img/logo.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: test 4s step-start infinite normal; 
+}
+
+.container .item5 {
+    background-image: url("./img/bre1.jpg");
+    position: relative;
+    
+}
+
+.container .item5 .item5_slid {
+    width: 100%;
+    aspect-ratio: 6 / 5;
+    background-image: url("./img/logo.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: test 4s step-start infinite normal; 
+}
+
+.container .item6 {
+    background-image: url("./img/bre1.jpg");
+    position: relative;
+    
+}
+
+.container .item6 .item6_slid {
+    width: 100%;
+    aspect-ratio: 6 / 5;
+    background-image: url("./img/logo.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: test 4s step-start infinite normal; 
+}
+
+@keyframes test {
+    0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+}
