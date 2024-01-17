@@ -7,9 +7,13 @@
 }
 
 .header {
+    width: 100%;
     display: flex;
     flex-direction: row;
     padding: 25px 30px;
+    position: fixed;
+    z-index: 10;
+    background: white;
 }
 
 .header .logo img{
@@ -31,113 +35,134 @@
     font-weight: bold;
 }
 
+.container {
+    padding-top: 7%;
+}
+
 .container .items {
-    aspect-ratio: 6 / 5;
     display: grid;
-    grid-template-columns: repeat(3, 25%);
-    grid-template-rows: repeat(2, 25%);
+    grid-template-columns: repeat(3, 435px);
+    grid-template-rows: repeat(2, 390px);
     justify-content: center;
 }
 
-.container .item {
-    background: red;
-    border: 3px solid green;
+.item {
+    border: 3px solid white;
 }
 
 .container .item1 {
-    background-image: url("./img/bre1.jpg");
+    width: 100%;
+    aspect-ratio: 6 / 6;
+    background-image: url("./img/mv_01_02.png");
     position: relative;
+    background-size: contain;
     
 }
 
-.container .item1 .item1_slid {
+.container .item1 .item1_slide {
     width: 100%;
-    aspect-ratio: 6 / 5;
-    background-image: url("./img/logo.png");
+    aspect-ratio: 6 / 6;
+    background-image: url("./img/mv_03_03.png");
     position: absolute;
     top: 0;
     left: 0;
     animation: test 4s step-start infinite normal; 
+    background-size: contain;
 }
 
 .container .item2 {
-    background-image: url("./img/bre1.jpg");
+    width: 100%;
+    aspect-ratio: 6 / 6;
+    background-image: url("./img/mv_02_04.png");
     position: relative;
-    
+    background-size: contain;
 }
 
-.container .item2 .item2_slid{
+.container .item2 .item2_slide {
     width: 100%;
-    aspect-ratio: 6 / 5;
-    background-image: url("./img/logo.png");
+    aspect-ratio: 6 / 6;
+    background-image: url("./img/mv_01_06.png");
     position: absolute;
     top: 0;
     left: 0;
     animation: test 4s step-start infinite normal; 
+    background-size: contain;
 }
 
 .container .item3 {
-    background-image: url("./img/bre1.jpg");
+    width: 100%;
+    aspect-ratio: 6 / 6;
+    background-image: url("./img/mv_04_07.png");
     position: relative;
-    
+    background-size: contain;
 }
 
-.container .item3 .item3_slid {
+.container .item3 .item3_slide {
     width: 100%;
-    aspect-ratio: 6 / 5;
-    background-image: url("./img/logo.png");
+    aspect-ratio: 6 / 6;
+    background-image: url("./img/mv_04_02.png");
     position: absolute;
     top: 0;
     left: 0;
     animation: test 4s step-start infinite normal; 
+    background-size: contain;
 }
 
 .container .item4 {
-    background-image: url("./img/bre1.jpg");
+    width: 100%;
+    aspect-ratio: 6 / 6;
+    background-image: url("./img/mv_04_04.png");
     position: relative;
-    
+    background-size: contain;
 }
 
-.container .item4 .item4_slid {
+.container .item4 .item4_slide {
     width: 100%;
-    aspect-ratio: 6 / 5;
-    background-image: url("./img/logo.png");
+    aspect-ratio: 6 / 6;
+    background-image: url("./img/mv_03_08.png");
     position: absolute;
     top: 0;
     left: 0;
     animation: test 4s step-start infinite normal; 
+    background-size: contain;
 }
 
 .container .item5 {
-    background-image: url("./img/bre1.jpg");
+    width: 100%;
+    aspect-ratio: 6 / 6;
+    background-image: url("./img/mv_01_04.png");
     position: relative;
-    
+    background-size: contain;
 }
 
-.container .item5 .item5_slid {
+.container .item5 .item5_slide {
     width: 100%;
-    aspect-ratio: 6 / 5;
-    background-image: url("./img/logo.png");
+    aspect-ratio: 6 / 6;
+    background-image: url("./img/mv_01_05.png");
     position: absolute;
     top: 0;
     left: 0;
     animation: test 4s step-start infinite normal; 
+    background-size: contain;
 }
 
 .container .item6 {
-    background-image: url("./img/bre1.jpg");
+    width: 100%;
+    aspect-ratio: 6 / 6;
+    background-image: url("./img/mv_06_04.png");
     position: relative;
-    
+    background-size: contain;
 }
 
-.container .item6 .item6_slid {
+.container .item6 .item6_slide {
     width: 100%;
-    aspect-ratio: 6 / 5;
-    background-image: url("./img/logo.png");
+    aspect-ratio: 6 / 6;
+    background-image: url("./img/mv_03_06.png");
     position: absolute;
     top: 0;
     left: 0;
     animation: test 4s step-start infinite normal; 
+    background-size: contain;
 }
 
 @keyframes test {
@@ -150,4 +175,111 @@
       100% {
         opacity: 0;
       }
+}
+
+.column_slides {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 1500px;
+    margin-top: 10%;
+}
+
+.column_slides .slides_column_text {
+    position: sticky;
+    top: 150px;
+    left: 10px;
+    font-size: 30px;
+    margin-right: 5%;
+    align-self: flex-start;
+}
+
+.column_slides .slides_column_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.column_text_title {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
+
+.column_text_subtitle {
+    font-size: 23px;
+    font-weight: 600;
+    color: #647080;
+    margin: 7% 0;
+}
+
+.column_btn {
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: rgb(44, 41, 41);
+    color: white;
+    padding: 5px;
+}
+
+.column_slides .slides_column_img .column_imgs {
+    width:350px; 
+    height:450px; 
+    border-radius: 7%;
+  }
+
+.slides_column_img .img1 {
+    background-image: url("./img/bg_illust.png");
+    position: relative;
+}
+
+.slides_column_img .img1 .img1_1 {
+    width:300px; 
+    height:300px; 
+    background-image: url("./img/cat_coffee.png");
+    background-size: contain;
+    position: absolute;
+    top: 17%;
+    left: 7%;
+    z-index: 1;
+    border-radius: 7%;
+}
+
+.slides_column_img .img2 {
+    background-image: url("./img/bg_wood.jpg");
+    background-size: contain;
+    position: relative;
+}
+
+.slides_column_img .img2 .img2_1 {
+    width:300px; 
+    height:300px; 
+    background-image: url("./img/cat_food.png");
+    background-size: contain;
+    position: absolute;
+    top: 17%;
+    left: 7%;
+    z-index: 1;
+    border-radius: 7%;
+}
+
+.slides_column_img .img3 {
+    background-image: url("./img/bg.png");
+    position: relative;
+}
+
+.slides_column_img .img3 .img3_1 {
+    width:300px; 
+    height:300px; 
+    background-image: url("./img/cat_set.png");
+    background-size: contain;
+    position: absolute;
+    top: 17%;
+    left: 7%;
+    z-index: 1;
+    border-radius: 7%;
+}
+
+.row_slider {
+    height: 1000px;
+    background: white;
 }
