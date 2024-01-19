@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card1 {
+    width: 200px;
+    height: 200px;
+    background-image: url("./img/cat_food.png");
+    background-size: contain;
+    animation: test 2s ease-in-out 1s infinite;
+    margin-right: 5%;
+}
+
+@keyframes test {
+    from {
+        transform: translateX(-500px);
+    }
+    to {
+        transform: translateX(500px);
+    }
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: lightblue;
+    overflow: hidden;
+}
