@@ -9,7 +9,7 @@
     height: 200px;
     background-image: url("./img/cat_food.png");
     background-size: contain;
-    animation: test 2s ease-in-out 1s infinite;
+    animation: test 2s ease-in-out 1s infinite; 
     margin-right: 5%;
 }
 
