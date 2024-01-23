@@ -341,27 +341,30 @@
     opacity: 1;
 }
 
-.scroll_ani {
-    height: 1000px;
+.scroll_event {
+    height: 1200px;
     background-color: orange;
 }
 
-.scroll_ani .service {
-    padding: 50px;
-    
+.scroll_event .service {
+    padding: 80px;  
+    opacity: 0;
+    transform: translateY(-150px);
+    transition: all 1s ease-in-out; 
 }
 
-.scroll_ani .service .service_box {
+
+.scroll_event .service .service_box {
     position: relative;
 }
 
-.scroll_ani .service img {
+.scroll_event .service img {
     width: 400px;
     aspect-ratio: 10 / 6; 
     box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.5)
 }
 
-.scroll_ani .service p {
+.scroll_event .service p {
     z-index: 5;
     font-size: 20px;
     position: absolute;
