@@ -736,7 +736,7 @@ html, body {
     width: 100%;
     padding: 10px 30px;
     position: fixed;
-    z-index: 5;
+    z-index: 1;
     background: rgba(255, 241, 232, 0.5);
 }
 
@@ -745,12 +745,13 @@ html, body {
 }
 
 .ham_nav img {
-    width: 60px;
+    width: 35px;
+    padding-top: 30%;
 }
 
 .hamburger_bar {
     position: absolute;
-    left: -40px;
+    left: -80px;
 }
 
 .ham_header .ham_logo img{
@@ -767,7 +768,7 @@ html, body {
 }
 
 .ham_sub_menu {
-    width: 110%;
+    width: 100%;
     font-size: 18px;
     font-weight: 500;
     display: none;

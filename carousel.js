@@ -22,6 +22,7 @@ function carousel() {
         x -= speed;
         if(width >= Math.abs(x)){
             list.style.left = `${x}px` 
+            console.log("1번이다 : " + x);
         }else{
             x = width
             console.log("실행됨1");
@@ -33,6 +34,7 @@ function carousel() {
 
         if(list2.offsetWidth >= Math.abs(x2)){
             list2.style.left = `${x2}px`
+            console.log("2번이다 : " + x2);
         }else{
             x2 = width;
             console.log("실행됨2");
